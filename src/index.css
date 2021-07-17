@@ -1,13 +1,191 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+.main {
+  display: flex;
+  margin: 0 auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 100%;
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+}
+
+.about-image-container {
+  width: 100%; 
+}
+
+.image {
+  border-radius: 15px;
+  margin-right: 40px;
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.about-title {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.about-me {
+  display: flex;
+  padding-right: 40px;
+  justify-content: center;
+}
+
+.about-image-container,
+.about-text {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.about-text {
+  padding: 16px;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px 16px;
+}
+
+.nav-list { 
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.logos {
+  display: flex;
+  height: 25%;
+  background-color: var(--light);
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.icon {
+  width: 45px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contact-me {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+  align-items: center;
+  
+}
+
+.button-submit {
+  margin-top: 5px;
+}
+
+.resume-div {
+  padding-left: 30px;
+}
+
+.projects {
+  display: flex;
+  
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.card {
+  display: flexbox;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--light);
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  width: 50%;
+  margin: 20px;
+
+  
+}
+
+.card-body {
+  font-size: 20px;
+  flex-grow: 2;
+  margin-left: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  background-color: var(--light);
+  border-radius: 10px;
+}
+
+.card-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px black;
+}
+
+.port {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.h1tag {
+  align-items: center;
+  justify-items: center;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+
+  .about-me {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .image {
+   margin: 16px;
+ }
+
+
+  .nav-title {
+    white-space: nowrap;
+  }
+
+ .nav-list {
+   overflow-x: auto;
+   
+ }
+
+ .nav-item {
+  margin: 4px;
+ }
+
+ h3 {
+   font-size: 1.7rem;
+ }
+
+ p {
+   font-size: 1rem;
+   word-break: break-word ;
+ }
+
 }
